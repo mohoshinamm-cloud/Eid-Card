@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: floating 10s linear infinite;
+    animation-duration:alternate;
+}
+
+h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color:rgb(235, 218, 127);
+    font-family: "Cookie", cursive;
+   font-weight: 900px;
+   text-shadow: -9px 10px 1px #2322226b; 
+  
+
+}
+
+.eid-text{
+    position: absolute;
+    left: 50%;
+    top: 60%; /* slightly below the h1 */
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #d8cb8c;
+    text-align: center;
+    width: 80%;
+    font-family: Arial, sans-serif;
+}
+
+
+
+@keyframes floating{
+    0%{
+        left: 49%;
+
+    }
+    25%{
+        top: 49%;
+    }
+    75%{
+        left: 51%;
+    }
+    100%{
+        top: 51%;
+    }
+}
